@@ -23,6 +23,11 @@ gcc -o client client.c
 ./client
 ```
 
+4. Pengujian Handle 100 Client menggunakan NetCat
+
+```
+for i in {1..100}; do nc 127.0.0.1 8080 & done
+```
 
 ## Fitur
 - Multi-client support dengan fork().
